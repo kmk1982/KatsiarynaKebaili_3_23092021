@@ -23,8 +23,8 @@ body{
         width: 100%;
         background-color:darken(white,12%) ;
         &__search{
-            margin-left: 4%;
-            width: 180px;
+            margin-left: 5%;
+            width: 160px;
             border: none;
             font-weight: bold;
             font-size: $texte-zoom;
@@ -43,9 +43,6 @@ body{
         justify-content: center;
         align-items: center;
         &__titre{
-            margin: 0;
-            font-weight: bold;
-            font-size: 180%;
             @include titre_index;
         }
         &__texte{
@@ -92,11 +89,7 @@ body{
 
     }
     &__titre{
-        padding-left: 25px;
-        margin: 0;
-        font-weight: bold;   
-        font-size: 180%;
-        margin-right: 45%;   
+        padding-left: 25px;      
         @include titre_index;
     }
     &__list{
@@ -125,17 +118,17 @@ body{
             justify-content: center;
             background: $couleur-primaire;
             border-radius: 100%;
-            color:white;
+            color:  white;
             padding: 4px 12px 4px 12px;
             font-size: $texte-zoom;
             z-index: 2;
         }
         &__bouton{
             z-index: 1;
-            min-width: 360px;
-            max-width: 699px;
+            min-width: 250px;
+            max-width: 512px;
             height: 100px;
-            margin-left: -18px;
+            margin-left: -20px;
             padding: 25px ;
             display: flex;
             justify-content: space-evenly;
@@ -147,7 +140,7 @@ body{
             border: none;
             background-color:darken(white,5%) ;
             font-weight: bold;
-            font-size: 120%;
+            font-size: $texte-zoom;
             & .fas{
                 color: grey;            
                 font-size: $texte-zoom;
@@ -167,7 +160,6 @@ body{
     margin-top: 20px;
     background-color:$font-gris;
     padding: 20px;
-    font-size: 90%;
     &__list{
         @include g-mobile-only{
             display: flex;
@@ -182,7 +174,7 @@ body{
         background-color:white;
         border-radius: 20px;
         margin: $haut_bas;
-        max-width: 380px;
+        min-width: 200px;
         @include g-mobile-only{
             max-width: 380px;
         }
@@ -200,14 +192,11 @@ body{
                 min-height: 300px;
                 z-index: 1;
             }
-            & new{
+            & p{
                 overflow: hidden;
-                position: absolute;
                 height: 15px;
-                width: 60px;
                 z-index: 2;
-                margin-left: 265px;
-                margin-top: 25px;
+                margin-left: -100px;
                 padding: 10px;
                 background-color: $couleur-tertiaire;
                 color:darken($couleur-tertiaire,50%);
@@ -220,7 +209,6 @@ body{
             justify-content: space-between;
             margin: 5%;
             color: black;
-            font-size: 75%;
         }
     }
-}
+} 
