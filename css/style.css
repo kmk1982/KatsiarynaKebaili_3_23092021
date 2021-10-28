@@ -703,8 +703,8 @@ body .main {
 }
 @media screen and (max-width: 699px) {
   .loading_spinner {
-    width: 180px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
   }
 }
 @media screen and (max-width: 799px) {
